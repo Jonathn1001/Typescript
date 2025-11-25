@@ -1,11 +1,12 @@
 // enum Role {
-//   Admin,
-//   Editor,
-//   Guest,
+//   Admin, // 0 by default
+//   Editor, // 1
+//   Guest, // 2
 // }
 
 // type MyNumber = number;
-type Role = 'admin' | 'editor' | 'guest' | 'reader';
+// Type Alias Or Custom Type
+type Role = "admin" | "editor" | "guest" | "reader";
 type User = {
   name: string;
   age: number;
@@ -13,11 +14,11 @@ type User = {
   permissions: string[];
 };
 
-let userRole: Role = 'admin';
+let userRole: Role = "admin";
 
 // ...
 
-userRole = 'guest';
+userRole = "guest";
 
 let possibleResults: [1 | -1, 1 | -1]; // [1, -1]
 
