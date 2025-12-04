@@ -16,8 +16,8 @@ type AppUser = {
   }[];
 };
 
-type Perms = AppUser['permissions'];
-type Perm = Perms[number];
+type Perms = ["permissions"]; // access the type "permissions" which is array of "permission" object type.
+type Perm = Perms[number]; // access to the single nested type "permission", nested object
 
 type Names = string[];
 type Name = Names[number];

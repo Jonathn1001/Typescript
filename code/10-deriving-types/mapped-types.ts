@@ -4,7 +4,7 @@ type Operations = {
 };
 
 type Results<T> = {
-  [Key in keyof T]?: number;
+  [K in keyof T]: number;
 };
 
 let mathOperations: Operations = {
@@ -20,5 +20,3 @@ let mathResults: Results<Operations> = {
   add: mathOperations.add(5, 1),
   subtract: mathOperations.subtract(5, 2),
 };
-
-mathResults.add = 10;
